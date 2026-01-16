@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Robust Embedded Experiments | Isaac Sudweeks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="ambient"></div>
+    <header class="site-header">
+      <div class="logo">IS</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="experience.html">Experience</a>
+        <a class="active" href="writing.html">Writing</a>
+        <a class="pill" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="detail-hero">
+        <a class="back-link" href="writing.html">Back to Writing</a>
+        <p class="eyebrow">Notes • Mar 2025</p>
+        <h1>Building Robust Embedded Experiments</h1>
+        <p class="detail-subhead">
+          Notes from lab builds that focus on reliability, repeatability, and
+          simple diagnostics for data collection rigs.
+        </p>
+        <div class="detail-tags">
+          <span class="chip">Embedded</span>
+          <span class="chip">Testing</span>
+          <span class="chip">Lab Notes</span>
+        </div>
+      </section>
+
+      <section class="detail-layout">
+        <div class="detail-main">
+          <div class="detail-card">
+            <h2>Summary</h2>
+            <p>
+              These notes outline the checks I run before long-duration tests.
+              The goal is to catch issues early, standardize logging, and reduce
+              surprises during multi-day experiments.
+            </p>
+          </div>
+          <div class="detail-card">
+            <h2>Key ideas</h2>
+            <ul class="detail-list">
+              <li>Create a repeatable startup checklist for every rig.</li>
+              <li>Automate logs to track sensor drift and actuator duty cycles.</li>
+              <li>Design for graceful failure when power or sensors drop.</li>
+            </ul>
+          </div>
+          <div class="detail-card">
+            <h2>Excerpt</h2>
+            <p class="detail-quote">
+              A reliable experiment is often just a clean log file and a smart
+              watchdog timer away.
+            </p>
+          </div>
+          <div class="detail-card">
+            <h2>What I learned</h2>
+            <ul class="detail-list">
+              <li>Redundant sensors provide faster debugging paths.</li>
+              <li>Clear labeling reduces mistakes in shared lab spaces.</li>
+              <li>Shorter feedback loops keep experiments on schedule.</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="detail-side">
+          <div class="detail-card">
+            <h3>Document details</h3>
+            <ul class="detail-meta">
+              <li><span>Format</span><strong>Lab notes</strong></li>
+              <li><span>Length</span><strong>3 pages</strong></li>
+              <li><span>Status</span><strong>Living document</strong></li>
+              <li><span>Topic</span><strong>Experimental rigor</strong></li>
+            </ul>
+          </div>
+          <div class="detail-card">
+            <h3>Visual notes</h3>
+            <div class="detail-figure">
+              <svg
+                class="detail-illustration"
+                viewBox="0 0 120 120"
+                role="img"
+                aria-label="Illustration of a checklist"
+              >
+                <rect x="24" y="18" width="72" height="84" rx="10" fill="#f5efe6" />
+                <path
+                  d="M38 40 L46 48 L60 34"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M38 62 L46 70 L60 56"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="detail-card">
+            <h3>Related work</h3>
+            <p>Pairs with the Chemistry Testing Box instrumentation build.</p>
+            <div class="detail-actions">
+              <a class="primary" href="chemistry-testing-box.html">View project</a>
+              <a class="ghost" href="mailto:isuds@byu.edu">Request notes</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Isaac Sudweeks. Built with intention.</p>
+      <div class="footer-links">
+        <a href="mailto:isuds@byu.edu">Email</a>
+        <a href="Isaac%27s%20Stuff/Resume_Fall_2025.docx">Resume</a>
+        <a href="Isaac%27s%20Stuff/Portfolio_Summer_2025.pdf">Portfolio PDF</a>
+      </div>
+    </footer>
+  </body>
+</html>
